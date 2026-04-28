@@ -21,12 +21,17 @@
   <meta name="twitter:title" content="Limitless Fitness">
   <meta name="twitter:description" content="Join Limitless Fitness and transform your life today.">
   <meta name="twitter:image" content="images/facility.jpg">
-  
+
+  <title>Limitless Fitness</title>
 </head>
+
 <body>
 <!-- add a skip link that skips to the main content -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
 <!-- add correct heading levels -->
   <header>
+    <h1>Limitless Fitness</h1>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#007BFF" stroke-linecap="round" stroke-linejoin="round" width="75" height="75" stroke-width="1.5">
       <path d="M2 12h1"></path>
       <path d="M6 8h-2a1 1 0 0 0 -1 1v6a1 1 0 0 0 1 1h2"></path>
@@ -36,13 +41,20 @@
       <path d="M18 8h2a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-2"></path>
       <path d="M22 12h-1"></path>
     </svg> 
-    Transform Your Life at Limitless Fitness
+    <p>Transform Your Life at Limitless Fitness</p>
     <p>Unleash your strength, embrace the challenge, and join a community dedicated to your fitness journey.</p>
     <a href="#">Join Now</a>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-    
-      src="images/facility.jpg"
+    <img 
+    src="images/facility-small.jpg"
+    srcset="images/facility-small.jpg 480w,
+        images/facility-medium.jpg 768w,
+        images/facility-large.jpg 1200w"
+    sizes="(max-width: 600px) 480px,
+       (max-width: 900px) 768px,
+       1200px"
+    alt="Modern fitness facility with workout equipment">
 
   </header>
   <nav>
