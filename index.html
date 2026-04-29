@@ -57,8 +57,8 @@
     alt="Modern fitness facility with workout equipment">
 
   </header>
-  <nav>
-    Main Navigation
+  <nav aria-label="Main Navigation">
+    <h2>Navigation</h2>
     <ul>
       <li><a href="#">About Us</a></li>
       <li><a href="#">Classes</a></li>
@@ -68,12 +68,14 @@
       <li><a href="#">Contact</a></li>
     </ul>
   </nav>
-  <main>
+
+  <main id="main-content">
     <section>
-      About Us
+      <h2>About Us</h2>
       <p>Welcome to Limitless Fitness, where fitness meets community. Our state-of-the-art facility is designed to inspire and support you at every stage of your journey. Whether you're a beginner or a seasoned athlete, our expert trainers and diverse classes provide the perfect environment to achieve your personal best.</p>
+
       <section>
-        What Sets Us Apart
+       <h3>What Sets Us Apart</h3>
         <ul>
           <li>Personalized Training: Customized workout plans tailored to your goals.</li>
           <li>Top-of-the-Line Equipment: The latest gear to ensure effective and safe workouts.</li>
@@ -82,8 +84,9 @@
         </ul>
       </section>
     </section>
+
     <section>
-      Our Classes
+      <h2>Our Classes</h2>
       <p>Discover a wide variety of classes designed to challenge and energize you.</p>
       <ul>
         <li>HIIT & Cardio: Boost your endurance and burn calories.</li>
@@ -94,9 +97,15 @@
       </ul>
 <!-- add alt text where necessary -->
 <!-- add responsive images for resolution switching -->
-        src="images/classes.jpg"
-
-    </section>
+      <img 
+      src="images/classes-small.jpg"
+      srcset="images/classes-small.jpg 480w,
+        images/classes-medium.jpg 768w,
+        images/classes-large.jpg 1200w"
+      sizes="100vw"
+      alt="Group fitness class working out together">
+     </section>
+     
     <section>
       Personal Training
       <p>
