@@ -145,19 +145,25 @@
 
       <label for="phone">Phone Number</label>
       <input type="tel" id="phone" name="phone">
-      
-        Membership Type
-          Select a Membership Option
-          Monthly Membership
-          Annual Membership
-          Family & Group Plans
-        Tell us about your fitness goals:
-        Submit
+
+        <label for="membership">Membership Type</label>
+        <select id="membership" name="membership" required>
+          <option value="">Select a Membership Option</option>
+          <option value="monthly">Monthly Membership</option>
+          <option value="annual">Annual Membership</option>
+          <option value="family">Family & Group Plans</option>
+        </select>
+
+        <label for="goals">Tell us about your fitness goals:</label>
+        <textarea id="goals" name="goals"></textarea>
+        <button type="submit">Submit</button>
+      </form>
       </section>
     </section>
   </main>
+
   <aside>
-    Testimonials
+    <h2>Testimonials</h2>
     <q>
       Joining Limitless Fitness has completely transformed my approach to fitness. The supportive community and expert guidance have made all the difference! - Alex R.
     </q>
@@ -167,7 +173,7 @@
   </aside>
   <footer>
     <section>
-      Stay connected
+      <h2>Stay connected</h2>
       <ul>
         <li>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#007BFF" width="35" height="35">
